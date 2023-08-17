@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div class="container">
+  <div *ngIf="product" class="card mt-4">
+    <div class="card-body">
+      <h2 class="card-title">{{ product.name }}</h2>
+      <p class="card-text">Giá: {{ product.price | number }}</p>
+      <p class="card-text">Mô tả: {{ product.desc }}</p>
+    </div>
+  </div>
+  <br>
+  <button class="btn btn-primary" (click)="goToHome()">Quay về trang chủ</button>
+</div>
+
